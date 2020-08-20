@@ -1,0 +1,61 @@
+body {
+  font-family: arial, sans-tarif;
+}
+
+h1 {
+  color: #1f80cc;
+  font-size: 60px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  color: #1f80cc;
+  font-size: 20px;
+  font-weight: 900;
+  height: 10px;
+  line-height: 19.2px;
+  list-style: none;
+  margin: 20px;
+}
+
+#current-location-button {
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  margin-bottom: 0.5rem !important;
+}
+
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 60px;
+  margin: auto;
+  max-width: 600px;
+}
+
+.search-field {
+  margin-top: 5px;
+}
+
+.units {
+  font-size: 17px;
+}
+
+.weather-forecast {
+  margin-top: 60px;
+  color: #1f80cc;
+  font-size: 20px;
+}
+
+img[alt="sunny and cloudy"] {
+  width: 150px;
+}
+
+img[alt="sunny"] {
+  width: 50px;
+}
+
+img[alt="cloudy"] {
+  width: 50px;
+}
