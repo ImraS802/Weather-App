@@ -29,9 +29,10 @@ li {
 
 .weather-app {
   border: 1px solid #dadde1;
-  padding: 60px;
+  padding: 60px 60px 20px 60px;
   margin: auto;
-  max-width: 600px;
+  max-width: 650px;
+  align-content: center;
 }
 
 .search-field {
@@ -58,4 +59,9 @@ img[alt="sunny"] {
 
 img[alt="cloudy"] {
   width: 50px;
+}
+
+.footer {
+  text-align: center;
+  font-size: 15px;
 }
