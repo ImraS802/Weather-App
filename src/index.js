@@ -33,6 +33,13 @@ function showWeather(response) {
   );
   document.querySelector("#description").innerHTML =
     response.data.weather[0].main;
+
+  let bigIconElement = document.querySelector("#big-icon");
+  bigIconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  bigIconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function searchCity(city) {
@@ -60,7 +67,13 @@ function getCurrentLocation(event) {
 
 function convertToCelsius(event) {
   event.preventDefault();
-  let temperatureElement = document.querySelector("#temperature");
+  let temperatureElement = document.querySelector("#celsius-link");
+  temperatureElement.innerHTML = 19;
+}
+
+function convertToFahrenheit(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#fahrenheit-link");
   temperatureElement.innerHTML = 19;
 }
 
