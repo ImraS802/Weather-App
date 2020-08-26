@@ -4,19 +4,17 @@ body {
 
 h1 {
   color: #1f80cc;
-  font-size: 60px;
 }
 
 ul {
-  padding: 0;
+  padding: 0px;
 }
 
 li {
   color: #1f80cc;
   font-size: 20px;
   font-weight: 900;
-  height: 10px;
-  line-height: 19.2px;
+  line-height: 17.2px;
   list-style: none;
   margin: 20px;
 }
@@ -27,20 +25,67 @@ li {
   margin-bottom: 0.5rem !important;
 }
 
-.weather-app {
-  border: 1px solid #dadde1;
-  padding: 60px 60px 20px 60px;
-  margin: auto;
+#current-date {
+  line-height: 1.5;
+}
+
+#temperature {
+  font-weight: 400;
+  font-size: 80px;
+  margin-right: -8px;
+}
+
+.weather-app-wrapper {
   max-width: 650px;
-  align-content: center;
+  margin: 15px auto 20px;
+}
+
+.weather-app {
+  padding: 60px 60px 23px 60px;
+  border: 1px solid #dadde1;
+  border-radius: 6px;
 }
 
 .search-field {
   margin-top: 5px;
 }
 
+.weather-icon img {
+  margin-right: 10px;
+  width: 130px;
+}
+
 .units {
   font-size: 17px;
+  position: relative;
+  top: -44px;
+}
+
+.unit-separator {
+  color: rgb(191, 191, 209);
+}
+
+#fahrenheit-link:visited {
+  color: rgb(191, 191, 209);
+}
+#fahrenheit-link:hover {
+  text-decoration: underline;
+}
+
+#fahrenheit-link:focus {
+  color: #1f80cc;
+}
+
+#celsius-link:visited {
+  color: rgb(191, 191, 209);
+}
+
+#celsius-link:hover {
+  text-decoration: underline;
+}
+
+#celsius-link:focus {
+  color: #1f80cc;
 }
 
 .weather-forecast {
@@ -62,6 +107,9 @@ img[alt="cloudy"] {
 }
 
 .footer {
-  text-align: center;
   font-size: 15px;
+}
+
+.open-source {
+  text-decoration: underline;
 }
