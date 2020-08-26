@@ -14,55 +14,63 @@
 
 <body>
     <div class="container">
-        <div class="weather-app">
-            <div class="search-field">
-                <form class="form-inline" id="search-form">
-                    <div class="form-group mb-2">
-                        <label for="staticCity2" class="sr-only"></label>
-                    </div>
-                    <div class="form-group mx-sm-3 mb-2">
-                        <label for="inputCity2" class="sr-only"></label>
-                        <input type="text" class="form-control shadow" id="input-city" placeholder="Enter a city"
-                            autocomplete="off" autofocus="on" />
-                    </div>
-                    <div class="col-3">
-                        <button type="submit" class="btn btn-primary mb-2 shadow">
-                            Search
-                        </button>
-                    </div>
-                    <div class="col-3">
-                        <button class="btn btn-success w-100 shadow" id="current-location-button">
-                            via GPS
-                        </button>
-                </form>
-            </div>
-            <br />
-            <div class="weather-data">
-                <div class="row">
-                    <div class="col-6">
-                        <ul>
-                            <li id="city-name">City</li>
-                            <li id="current-date"></li>
-                            <li id="description">Description</li>
-                            <br />
-                        </ul>
-                    </div>
-                    <div class="col-6">
-                        <ul>
-                            <li>Humidity: <span id="humidity"></span>%</li>
-                            <li>Wind: <span id="wind"> </span> km/h</li>
-                        </ul>
+        <div class="weather-app-wrapper">
+            <div class="weather-app">
+                <div class="search-field">
+                    <form class="form-inline" id="search-form">
+                        <div class="form-group mb-2">
+                            <label for="staticCity2" class="sr-only"></label>
+                        </div>
+                        <div class="form-group mx-sm-3 mb-2">
+                            <label for="inputCity2" class="sr-only"></label>
+                            <input type="text" class="form-control shadow" id="input-city" placeholder="Enter a city"
+                                autocomplete="off" autofocus="on" />
+                        </div>
+                        <div class="col-3">
+                            <button type="submit" class="btn btn-primary mb-2 shadow">
+                                Search
+                            </button>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-success w-100 shadow" id="current-location-button">
+                                via GPS
+                            </button>
+                    </form>
+                </div>
+                <br />
+
+                <div class="weather-data">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="float-left">
+                                <ul>
+                                    <li id="city-name">City</li>
+                                    <li>Last updated: <span id="current-date"></span></li>
+                                    <li id="description">Description</li>
+                            </div>
+
+                            </ul>
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li>Humidity: <span id="humidity"></span>%</li>
+                                <li>Wind: <span id="wind"> </span> km/h</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
+                <br />
 
-
-                <h1>
-                    <img src="src/images/sunnyCloudy.png" alt="sunny and cloudy" />
-                    <span class="temperature" id="temperature">-</span>
-                    <sup>
-                        <span class="units"> <a href="#" id="celsius-link">°C</a> </span>
-                    </sup>
-                </h1>
+                <div class="weather-icon">
+                    <h1>
+                        <img src="src/images/sunnyCloudy.png" alt="weather visual" id="big-icon" />
+                        <span class="temperature" id="temperature">-</span>
+                        <span class="units"> <a href="#" id="celsius-link"><strong>°C </strong></a>
+                            <span class="unit-separator">|</span>
+                            <a href="#" id="fahrenheit-link"><strong> °F</strong></a>
+                        </span>
+                    </h1>
+                </div>
 
                 <div class="weather-forecast">
                     <div class="row">
@@ -112,18 +120,19 @@
                 </div>
             </div>
         </div>
-<br />
-<br />
-<br />
-<br />
-<script src="src/index.js"></script>
-<p class="footer">
-    <a href="https://github.com/ImraS802/Weather-App" target="_blank" class="open-source">
-        <em>Open-source code by Imra S.</em>
-    </a>
-</p>
-</div>
-        <script src="src/index.js"></script>
+
+        <p class="footer">
+            <small>
+                <a href="https://github.com/ImraS802/Weather-App" target="_blank" class="open-source">
+                    <em>Open-source code </em>
+                </a>
+                <em>by Imra S.</em>
+            </small>
+        </p>
+    </div>
+    </div>
+    </div>
+    <script src="src/index.js"></script>
 </body>
 
 </html>
