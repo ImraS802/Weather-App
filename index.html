@@ -32,7 +32,7 @@
                             </button>
                         </div>
                         <div class="col-3">
-                            <button class="btn btn-success w-100 shadow" id="current-location-button">
+                            <button class="btn btn-success w-200 shadow" id="current-location-button">
                                 via GPS
                             </button>
                     </form>
@@ -62,14 +62,18 @@
                 <br />
 
                 <div class="weather-icon">
-                    <h1>
-                        <img src="src/images/sunnyCloudy.png" alt="weather visual" id="big-icon" />
-                        <span class="temperature" id="temperature">-</span>
-                        <span class="units"> <a href="#" id="celsius-link"><strong>°C </strong></a>
-                            <span class="unit-separator">|</span>
-                            <a href="#" id="fahrenheit-link"><strong> °F</strong></a>
-                        </span>
-                    </h1>
+                    <div class="row">
+                        <h1>
+                            <img src="src/images/sunnyCloudy.png" alt="weather visual" id="big-icon" />
+                        </h1>
+                        <div class="col-5">
+                            <span id="temperature">-</span>
+                            <span class="units">
+                                <a href="#" id="celsius-link" class="active"><strong>°C </strong></a> |
+                                <a href="#" id="fahrenheit-link"><strong> °F</strong></a>
+                            </span>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="weather-forecast">
