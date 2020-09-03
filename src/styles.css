@@ -1,9 +1,5 @@
 body {
-  font-family: arial, sans-tarif;
-}
-
-h1 {
-  color: #1f80cc;
+  font-family: "Barlow", sans-serif;
 }
 
 ul {
@@ -19,91 +15,110 @@ li {
   margin: 20px;
 }
 
-#current-location-button {
-  padding: 6px 12px;
-  border: 1px solid transparent;
-  margin-bottom: 0.5rem !important;
-}
-
-#current-date {
-  line-height: 1.5;
-}
-
-#temperature {
-  font-weight: 400;
-  font-size: 80px;
-  margin-right: -8px;
-}
-
 .weather-app-wrapper {
   max-width: 650px;
   margin: 15px auto 20px;
 }
 
 .weather-app {
-  padding: 60px 60px 23px 60px;
+  padding: 60px 60px 25px 60px;
   border: 1px solid #dadde1;
   border-radius: 6px;
+  background-color: #dadada;
 }
 
 .search-field {
   margin-top: 5px;
 }
 
-.weather-icon img {
-  margin-right: 10px;
-  width: 130px;
+#current-location-button {
+  padding: 6px 12px;
+  border: 1px solid transparent;
+  margin-bottom: 0.5rem !important;
 }
 
-.units {
+#city-name {
+  font-size: 40px;
+  color: #1f80cc;
+  margin-left: 20px;
+  font-weight: 900;
+}
+
+#current-date {
+  line-height: 1.5;
+}
+
+#description::first-letter {
+  text-transform: uppercase;
+}
+
+#humidity {
+  font-weight: 900;
+  line-height: 1.5;
+}
+
+.weather-icon .units {
   font-size: 17px;
   position: relative;
   top: -44px;
+  color: #979797;
 }
 
-.unit-separator {
-  color: rgb(191, 191, 209);
-}
-
-#fahrenheit-link:visited {
-  color: rgb(191, 191, 209);
-}
-#fahrenheit-link:hover {
-  text-decoration: underline;
-}
-
-#fahrenheit-link:focus {
+#temperature {
   color: #1f80cc;
+  font-weight: 400;
+  font-size: 80px;
+  margin-left: 15px;
+  margin-right: 5px;
+  line-height: 2;
 }
 
-#celsius-link:visited {
-  color: rgb(191, 191, 209);
-}
-
-#celsius-link:hover {
-  text-decoration: underline;
-}
-
-#celsius-link:focus {
+#celsius-link.active {
   color: #1f80cc;
+  cursor: default;
+}
+
+#celsius-link {
+  color: #979797;
+}
+
+#fahrenheit-link.active {
+  color: #1f80cc;
+  cursor: default;
+}
+
+#fahrenheit-link {
+  color: #979797;
+}
+
+#big-icon {
+  margin-right: 5px;
+  width: 170px;
+  height: 150px;
+  padding-left: 18px;
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: -40px;
+  color: #1f80cc;
+  font-size: 20px;
 }
 
 .weather-forecast {
   margin-top: 60px;
   color: #1f80cc;
-  font-size: 20px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 15px;
+  height: auto;
 }
 
-img[alt="sunny and cloudy"] {
-  width: 150px;
-}
-
-img[alt="sunny"] {
-  width: 50px;
-}
-
-img[alt="cloudy"] {
-  width: 50px;
+.weather-forecast img {
+  display: block;
+  margin: 0 auto;
+  height: 55px;
+  width: 55px;
 }
 
 .footer {

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project Weather App</title>
-
+    <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
     <link rel="stylesheet" href="src/styles.css" />
@@ -38,20 +38,18 @@
                     </form>
                 </div>
                 <br />
-
                 <div class="weather-data">
+                    <h1 id="city-name"></h1>
                     <div class="row">
-                        <div class="col-6">
+                        <div class="col-7">
                             <div class="float-left">
                                 <ul>
-                                    <li id="city-name">City</li>
                                     <li>Last updated: <span id="current-date"></span></li>
-                                    <li id="description">Description</li>
+                                    <li id="description"></li>
+                                </ul>
                             </div>
-
-                            </ul>
                         </div>
-                        <div class="col-6">
+                        <div class="col-5">
                             <ul>
                                 <li>Humidity: <span id="humidity"></span>%</li>
                                 <li>Wind: <span id="wind"> </span> km/h</li>
@@ -59,15 +57,11 @@
                         </div>
                     </div>
                 </div>
-                <br />
-
                 <div class="weather-icon">
                     <div class="row">
-                        <h1>
-                            <img src="src/images/sunnyCloudy.png" alt="weather visual" id="big-icon" />
-                        </h1>
+                        <img src="" alt="weather visual" id="big-icon" />
                         <div class="col-5">
-                            <span id="temperature">-</span>
+                            <span id="temperature"></span>
                             <span class="units">
                                 <a href="#" id="celsius-link" class="active"><strong>°C </strong></a> |
                                 <a href="#" id="fahrenheit-link"><strong> °F</strong></a>
@@ -75,11 +69,12 @@
                         </div>
                     </div>
                 </div>
+                <hr />
+                <h3>3 Hour Weather Forecast</h3>
                 <div class="row weather-forecast" id="forecast">
                 </div>
             </div>
         </div>
-
         <p class="footer">
             <small>
                 <a href="https://github.com/ImraS802/Weather-App" target="_blank" class="open-source">
@@ -93,4 +88,5 @@
     </div>
     <script src="src/index.js"></script>
 </body>
+
 </html>
